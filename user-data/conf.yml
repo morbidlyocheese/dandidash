@@ -1,47 +1,1382 @@
----
-# Page meta info, like heading, footer text and nav links
 pageInfo:
-  title: Dashy
-  description: Welcome to your new dashboard!
+  title: MoC's Dash
+  description: secret dashboardddddd
   navLinks:
-  - title: GitHub
-    path: https://github.com/Lissy93/dashy
-  - title: Documentation
-    path: https://dashy.to/docs
-
-# Optional app settings and configuration
+    - title: GitHub
+      path: https://github.com/Lissy93/dashy
+      target: newtab
+    - title: Documentation
+      path: https://dashy.to/docs
+      target: newtab
+  logo: https://i.imgur.com/B14HtSi.png
 appConfig:
-  theme: colorful
-
-# Main content - An array of sections, each containing an array of items
+  theme: dashy-docs
+  layout: auto
+  iconSize: large
+  language: en
+  startingView: default
+  defaultOpeningMethod: sametab
+  statusCheck: false
+  statusCheckInterval: 0
+  faviconApi: besticon
+  routingMode: history
+  enableMultiTasking: false
+  widgetsAlwaysUseProxy: false
+  webSearch:
+    disableWebSearch: false
+    searchEngine: google
+    openingMethod: sametab
+    searchBangs: {}
+  enableFontAwesome: true
+  enableMaterialDesignIcons: true
+  hideComponents:
+    hideHeading: false
+    hideNav: false
+    hideSearch: false
+    hideSettings: false
+    hideFooter: false
+  auth:
+    enableGuestAccess: false
+    users: []
+    enableKeycloak: false
+  showSplashScreen: false
+  preventWriteToDisk: false
+  preventLocalSave: false
+  disableConfiguration: false
+  disableConfigurationForNonAdmin: false
+  allowConfigEdit: true
+  enableServiceWorker: false
+  disableContextMenu: false
+  disableUpdateChecks: false
+  disableSmartSort: false
+  enableErrorReporting: false
+  colCount: 4
+  defaultIcon: https://icons8.com/icon/DXf9reV9ZeUs/broken-link
+  customColors:
+    glow:
+      primary: '#eff961'
+      background: '#ffaddc'
+      background-darker: '#ffbde1'
+      info: '#04e4f4'
+      success: '#20e253'
+      warning: '#f6f000'
+      error: '#fca016'
+      danger: '#f80363'
+      neutral: '#272f4d'
+      white: '#fdc9e6'
+      black: '#000'
+      item-group-background: '#fbb1db'
+      medium-grey: '#5e6474'
+      item-background: '#fff'
+      item-background-hover: '#fff'
+      transparent-70: rgba(0,0,0,0.701961)
+      transparent-50: hsla(0,0%,81.2%,0.501961)
+      transparent-30: rgba(0,0,0,0.301961)
+      transparent-white-70: hsla(0,0%,100%,0.701961)
+      transparent-white-50: hsla(0,0%,100%,0.501961)
+      transparent-white-30: hsla(0,0%,100%,0.301961)
+      heading-text-color: '#eff961'
+      nav-link-text-color: '#eff961'
+      nav-link-background-color: rgba(96,125,139,0.2)
+      nav-link-text-color-hover: '#eff961'
+      nav-link-background-color-hover: rgba(96,125,139,0.2)
+      nav-link-border-color: transparent
+      nav-link-border-color-hover: '#eff961'
+      nav-link-shadow: '1px 1px 2px #232323'
+      nav-link-shadow-hover: '1px 1px 2px #232323'
+      item-text-color: '#eff961'
+      item-text-color-hover: '#eff961'
+      item-group-outer-background: '#fff'
+      item-group-heading-text-color: '#eff961'
+      item-group-heading-text-color-hover: '#eff961'
+      settings-text-color: '#eff961'
+      settings-background: '#ffaddc'
+      config-settings-color: '#eff961'
+      config-settings-background: '#c29eb2'
+      config-code-color: '#ffaddc'
+      config-code-background: '#fff'
+      code-editor-color: '#000'
+      code-editor-background: '#fff'
+      widget-text-color: '#eff961'
+      widget-background-color: '#e3bfd3'
+      widget-accent-color: '#ffaddc'
+      widget-base-background: transparent
+      interactive-editor-color: '#eff961'
+      interactive-editor-background: '#ffaddc'
+      interactive-editor-background-darker: '#c29eb2'
+      cloud-backup-color: '#eff961'
+      cloud-backup-background: '#c29eb2'
+      search-container-background: '#c29eb2'
+      search-field-background: '#ffaddc'
+      search-label-color: '#eff961'
+      footer-text-color: '#5e6474'
+      footer-text-color-link: '#eff961'
+      footer-background: '#c29eb2'
+      context-menu-background: '#ffaddc'
+      context-menu-color: '#eff961'
+      context-menu-secondary-color: '#c29eb2'
+      side-bar-background: '#c29eb2'
+      side-bar-background-lighter: '#ffaddc'
+      side-bar-color: '#eff961'
+      side-bar-item-background: '#c29eb2'
+      side-bar-item-color: '#eff961'
+      workspace-web-content-background: '#ffaddc'
+      minimal-view-background-color: '#ffaddc'
+      minimal-view-title-color: '#eff961'
+      minimal-view-settings-color: '#eff961'
+      minimal-view-section-heading-color: '#eff961'
+      minimal-view-section-heading-background: '#c29eb2'
+      minimal-view-search-background: '#c29eb2'
+      minimal-view-search-color: '#eff961'
+      minimal-view-group-color: '#eff961'
+      minimal-view-group-background: '#c29eb2'
+      login-form-color: '#eff961'
+      login-form-background: '#ffaddc'
+      login-form-background-secondary: '#c29eb2'
+      about-page-color: '#fff'
+      about-page-background: '#ffaddc'
+      about-page-accent: '#eff961'
+      scroll-bar-color: '#eff961'
+      scroll-bar-background: '#c29eb2'
+      highlight-color: '#ffaddc'
+      highlight-background: '#eff961'
+      progress-bar: '#eff961'
+      loading-screen-color: '#eff961'
+      loading-screen-background: '#ffaddc'
+      status-check-tooltip-background: '#c29eb2'
+      status-check-tooltip-color: '#eff961'
+      welcome-popup-background: '#c29eb2'
+      welcome-popup-text-color: '#eff961'
+      toast-background: '#eff961'
+      toast-color: '#ffaddc'
+      description-tooltip-background: '#c29eb2'
+      description-tooltip-color: '#eff961'
+      outline-color: none
+      curve-factor: 12px
+      curve-factor-navbar: 16px
+      curve-factor-small: 2px
+      dimming-factor: '0.7'
+      scroll-bar-width: 8px
+      header-height: 6.3rem
+      footer-height: 120px
+      item-group-padding: 5px
+      item-shadow: 0 1px 5px 0 rgba(134,86,239,0.501961)
+      item-hover-shadow: 0 1px 8px 0 rgba(134,86,239,0.65098)
+      item-icon-transform: drop-shadow(1px 2px 3px hsla(0,0%,81.2%,0.501961)) saturate(0.95)
+      item-icon-transform-hover: drop-shadow(1px 2px 4px hsla(0,0%,81.2%,0.501961)) saturate(0.95)
+      item-group-shadow: 0 5px 16px 0 rgba(159,114,255,0.2)
+      context-menu-shadow: 0 1px 5px 0 rgba(134,86,239,0.501961)
+      section-max-height: 3000px
+      settings-container-shadow: none
+      side-bar-width: 3.5rem
+      tooltip-arrow-size: 6px
+      tooltip-width: 250px
+      tooltip-padding: 0.2rem
+      font-body: '"Raleway","Trebuchet MS",sans-serif'
+      font-headings: '"Sniglet",cursive'
+      font-monospace: '"PTMono","Courier New",monospace'
 sections:
-- name: Getting Started
-  icon: fas fa-rocket
-  items:
-  - title: Dashy Live
-    description: Development a project management links for Dashy
-    icon: https://i.ibb.co/qWWpD0v/astro-dab-128.png
-    url: https://live.dashy.to/
-    target: newtab
-  - title: GitHub
-    description: Source Code, Issues and Pull Requests
-    url: https://github.com/lissy93/dashy
-    icon: favicon
-  - title: Docs
-    description: Configuring & Usage Documentation
-    provider: Dashy.to
-    icon: far fa-book
-    url: https://dashy.to/docs
-  - title: Showcase
-    description: See how others are using Dashy
-    url: https://github.com/Lissy93/dashy/blob/master/docs/showcase.md
-    icon: far fa-grin-hearts
-  - title: Config Guide
-    description: See full list of configuration options
-    url: https://github.com/Lissy93/dashy/blob/master/docs/configuring.md
-    icon: fas fa-wrench
-  - title: Support
-    description: Get help with Dashy, raise a bug, or get in contact
-    url: https://github.com/Lissy93/dashy/blob/master/.github/SUPPORT.md
-    icon: far fa-hands-helping
-  
+  - name: media
+    icon: >-
+      https://banner2.cleanpng.com/20180723/we/kisspng-social-media-public-relations-mass-media-computer-5b56211d86de80.5389803315323712295524.jpg
+    displayData:
+      sortBy: most-used
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: plex
+        description: media consumption
+        icon: https://www.plex.tv/wp-content/uploads/2018/01/pmp-icon-1.png
+        url: http://192.168.1.177:32400/web/index.html#!/
+        target: sametab
+        statusCheck: true
+        statusCheckUrl: 192.168.1.177:32400
+        id: 0_512_plex
+      - title: tautulli
+        description: history of media consumed on plex
+        icon: https://tautulli.com/images/logo-circle.png
+        url: http://192.168.1.177:8181
+        target: sametab
+        statusCheck: true
+        id: 1_512_tautulli
+      - title: youtube
+        description: youtubez
+        icon: >-
+          https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/1024px-YouTube_full-color_icon_%282017%29.svg.png
+        url: https://youtube.com
+        target: sametab
+        id: 2_512_youtube
+      - title: twitch
+        description: live video entertainment
+        icon: https://cdn-icons-png.flaticon.com/512/2335/2335303.png
+        url: https://www.twitch.tv/
+        target: sametab
+        id: 3_512_twitch
+      - title: readarr
+        description: bookz management
+        icon: https://avatars.githubusercontent.com/u/57576474?s=280&v=4
+        url: http://192.168.1.177:8787/
+        target: sametab
+        statusCheck: true
+        id: 4_512_readarr
+      - title: kavita
+        description: bookz/comix
+        icon: https://wiki.kavitareader.com/user/pages/01.home/kavita-logo3.png
+        url: http://192.168.1.177:5000
+        target: sametab
+        statusCheck: true
+        id: 5_512_kavita
+      - title: bazarr
+        description: subtitlez
+        icon: >-
+          https://user-images.githubusercontent.com/26902309/41456760-be00043e-7081-11e8-9646-1b724037b4ff.png
+        url: http://192.168.1.177:6767/
+        target: sametab
+        statusCheck: true
+        id: 6_512_bazarr
+      - title: overseer
+        description: request media
+        icon: >-
+          https://i0.wp.com/devildogtech.com/wp-content/uploads/2022/10/overseerr.png?fit=250%2C250&ssl=1
+        url: http://192.168.1.177:5055
+        target: sametab
+        statusCheck: true
+        id: 7_512_overseer
+      - title: radarr
+        description: filmz management
+        icon: >-
+          https://static-00.iconduck.com/assets.00/radarr-icon-462x512-bydv4e4f.png
+        url: http://192.168.1.177:7878/
+        target: sametab
+        statusCheck: true
+        id: 8_512_radarr
+      - title: paramount+
+        description: paramount
+        icon: >-
+          http://store-images.s-microsoft.com/image/apps.40263.9007199266243596.1230f3f2-f93f-4f0e-8de0-9e19b3939e30.f48eb267-7231-40da-bf59-4719caec0b54
+        url: https://www.paramountplus.com/home/
+        target: sametab
+        id: 9_512_paramount
+      - title: sonarr
+        description: tv management
+        icon: >-
+          https://static-00.iconduck.com/assets.00/sonarr-icon-512x512-u69bke0s.png
+        url: http://192.168.1.177:8989
+        target: sametab
+        statusCheck: true
+        id: 10_512_sonarr
+      - title: hulu
+        description: hulu
+        icon: >-
+          http://store-images.s-microsoft.com/image/apps.10697.9007199266246590.a8642808-8fcd-48e6-805e-aede1f148787.29ce60f8-9693-4ed9-8c6d-15ecdeff47de
+        url: https://www.hulu.com/hub/home
+        target: sametab
+        id: 11_512_hulu
+      - title: disney+
+        description: disney+
+        icon: >-
+          http://store-images.s-microsoft.com/image/apps.7471.14495311847124170.e89a4dce-fd9a-4a10-b8e4-a6c3aa1c055e.03d81561-4078-4efb-8884-19e1161ab56b
+        url: https://www.disneyplus.com/home
+        target: sametab
+        id: 12_512_disney
+      - title: hbomax
+        description: hbomax
+        icon: >-
+          https://play-lh.googleusercontent.com/1iyX7VdQ7MlM7iotI9XDtTwgiVmqFGzqwz10L67XVoyiTmJVoHX87QtqvcXgUnb0AC8
+        url: https://play.hbomax.com/
+        target: sametab
+        id: 13_512_hbomax
+      - title: uhm
+        description: upcoming horror movies
+        icon: https://i.gyazo.com/2fed5c934eab8d7900d8f849931eae41.png
+        url: https://www.upcominghorrormovies.com/
+        target: sametab
+        id: 14_512_uhm
+      - title: mylarr
+        description: comic manager
+        icon: >-
+          https://pbs.twimg.com/profile_images/3761678243/d62f2bfebf3c29f87669e1ee8c4bb622_400x400.png
+        url: http://192.168.1.177:8090
+        target: sametab
+        statusCheck: true
+        id: 15_512_mylarr
+      - title: netflix
+        description: a once great streaming service
+        icon: https://1000logos.net/wp-content/uploads/2017/05/Netflix-Logo-2006.png
+        url: https://netflix.com
+        target: sametab
+        id: 16_512_netflix
+      - title: soundcloud
+        description: where i can someday be a rapper
+        icon: https://cdn-icons-png.flaticon.com/512/145/145809.png
+        url: https://soundcloud.com/morbidlyocheese
+        target: sametab
+        id: 17_512_soundcloud
+      - title: tubi
+        description: lots of free movies (horror)
+        icon: https://cdn.adrise.tv/image/app_icon_200x200.png
+        url: https://tubitv.com/home
+        target: sametab
+        id: 18_512_tubi
+      - title: just watch
+        description: know where movies are rentable/streaming
+        icon: >-
+          https://play-lh.googleusercontent.com/Riuz226TXAawu8ZXlL7wnsjtMHkTMTDh_RSRiozAdoKe2TyGG4cLp3rPB0CxQFEUzFc
+        url: https://www.justwatch.com/
+        target: sametab
+        tags:
+          - movies
+          - streaming
+        id: 19_512_justwatch
+  - name: productivity
+    icon: https://cdn-icons-png.flaticon.com/512/857/857152.png
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: habitica
+        description: gamify life
+        icon: >-
+          https://assets.materialup.com/uploads/6e01d652-82c8-4c15-8dc9-0a0a73e930b1/preview.jpg
+        url: https://habitica.com/
+        target: newtab
+        id: 0_1334_habitica
+      - title: milanote
+        icon: >-
+          https://i.pinimg.com/originals/26/b4/b6/26b4b68f0223db8c87f1fa714d5f0f91.gif
+        url: https://app.milanote.com/1PElsL1dc410op/home
+        target: newtab
+        id: 1_1334_milanote
+      - title: notion
+        description: notes and stuff
+        icon: https://img.icons8.com/ios/512/notion.png
+        url: >-
+          https://www.notion.so/morbidlyocheese/Code-Snippets-dbc97290c8cf4455b34dfa8c18067dd9
+        target: sametab
+        id: 2_1334_notion
+      - title: email
+        description: warwickjunglex
+        icon: >-
+          https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/2560px-Gmail_icon_%282020%29.svg.png
+        url: https://mail.google.com/mail/u/0/#inbox
+        target: sametab
+        color: '#009dff'
+        id: 3_1334_email
+      - title: email
+        description: damienjdarko
+        icon: >-
+          https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/2560px-Gmail_icon_%282020%29.svg.png
+        url: https://mail.google.com/mail/u/1/#inbox
+        target: sametab
+        color: '#94ff00'
+        id: 4_1334_email
+      - title: trello
+        description: project management tool
+        icon: https://cdn-icons-png.flaticon.com/512/6124/6124991.png
+        url: https://trello.com/u/morbidlyocheese
+        target: sametab
+        id: 5_1334_trello
+      - title: google docs
+        description: ''
+        icon: >-
+          https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Google_Docs_logo_%282014-2020%29.svg/1200px-Google_Docs_logo_%282014-2020%29.svg.png
+        url: https://docs.google.com/document/u/0/
+        target: sametab
+        id: 6_1334_googledocs
+      - title: google calendar
+        icon: >-
+          https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Google_Calendar_icon_%282020%29.svg/2048px-Google_Calendar_icon_%282020%29.svg.png
+        url: https://calendar.google.com/calendar/u/0/r
+        target: sametab
+        id: 7_1334_googlecalendar
+      - title: email
+        description: morbidlyocheese
+        icon: >-
+          https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/2560px-Gmail_icon_%282020%29.svg.png
+        url: https://mail.google.com/mail/u/6/#inbox
+        target: sametab
+        color: pink
+        id: 8_1334_email
+      - title: second brain
+        description: my second brain via notion
+        icon: >-
+          https://api.typedream.com/v0/document/public/2b911f68-6304-4e4a-82ed-d2909e481c1e_Logo_svg.svg?bucket=document
+        url: >-
+          https://www.notion.so/morbidlyocheese/Second-Brain-72396606115a410cbf49e0c6eca63c05?pvs=4
+        target: sametab
+        id: 9_1334_secondbrain
+      - title: google drive
+        description: cloud storage
+        icon: https://1000logos.net/wp-content/uploads/2021/04/Google-Drive-logo.png
+        url: https://drive.google.com/drive/u/0/my-drive
+        target: sametab
+        tags:
+          - storage
+          - google
+        id: 10_1334_googledrive
+      - title: slack
+        description: a/A slack
+        url: https://app.slack.com/client/T03GU501J/C03GU502Q
+        target: sametab
+        id: 11_1334_slack
+      - title: hashnode
+        description: coding blog
+        icon: https://simpleicons.org/icons/hashnode.svg
+        url: https://hashnode.com/@morbidlyocheese
+        target: sametab
+        id: 12_1334_hashnode
+      - title: daily.dev
+        url: https://app.daily.dev/morbidlyocheese
+        target: sametab
+        id: 13_1334_dailydev
+  - name: social media
+    icon: https://cdn-icons-png.flaticon.com/512/3893/3893024.png
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: tumblr
+        description: blogging
+        icon: >-
+          https://64.media.tumblr.com/c76fd8783b564909bc5d24e4d160e9a5/d1c457b1ce3a4e79-f9/s1280x1920/3a4a4ce662723623b75ea03587f64fbd5aea270d.jpg
+        url: https://tumblr.com
+        target: newtab
+        id: 0_1179_tumblr
+      - title: reddit
+        description: the new forum?
+        icon: https://www.iconpacks.net/icons/2/free-reddit-logo-icon-2436-thumb.png
+        url: https://www.reddit.com/
+        target: sametab
+        id: 1_1179_reddit
+      - title: imgur
+        description: imgz
+        icon: >-
+          https://play-lh.googleusercontent.com/hYdIazwJBlPhmN74Yz3m_jU9nA6t02U7ZARfKunt6dauUAB6O3nLHp0v5ypisNt9OJk
+        url: https://imgur.com/user/djangosolarboy/posts
+        target: sametab
+        id: 2_1179_imgur
+      - title: giphy
+        description: jifs
+        icon: >-
+          https://assets.materialup.com/uploads/531a40fe-a71e-4bce-bf01-1f06e18ebf98/preview.jpg
+        url: https://giphy.com/channel/morbidlyocheese
+        target: sametab
+        id: 3_1179_giphy
+      - title: instagram
+        description: posting of photographs
+        icon: >-
+          https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-instagram-icon-png-image_6315974.png
+        url: https://www.instagram.com/
+        target: sametab
+        id: 4_1179_instagram
+      - title: twitter
+        description: tweetz are dumb
+        icon: >-
+          https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/1245px-Twitter-logo.svg.png
+        url: https://twitter.com/home
+        target: sametab
+        id: 5_1179_twitter
+      - title: linkedin
+        description: linking into the internet
+        icon: https://cdn-icons-png.flaticon.com/512/174/174857.png
+        url: https://www.linkedin.com/in/damien-darko/
+        target: sametab
+        id: 6_1179_linkedin
+      - title: facebook
+        description: the book of facez
+        icon: https://cdn-icons-png.flaticon.com/512/124/124010.png
+        url: https://www.facebook.com/
+        target: sametab
+        id: 7_1179_facebook
+  - name: streaming toolz
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: stream elements
+        icon: https://cdn.streamelements.com/static/logo/logo_red.png
+        url: https://streamelements.com/dashboard
+        target: sametab
+        statusCheck: true
+        id: 0_1570_streamelements
+      - title: twitch dashboard
+        icon: https://simpleicons.org/icons/twitch.svg
+        url: https://dashboard.twitch.tv/u/morbidlyocheese/stream-manager
+        target: sametab
+        statusCheck: true
+        id: 1_1570_twitchdashboard
+      - title: website
+        icon: https://morbidlyocheese.com/img/logo_cowbert.ee7c6743.png
+        url: https://morbidlyocheese.com
+        target: sametab
+        statusCheck: true
+        id: 2_1570_website
+      - title: moobot
+        icon: https://moo.bot/favicon.ico
+        url: https://moo.bot/morbidlyocheese
+        id: 3_1570_moobot
+      - title: blerp
+        icon: https://cdn.blerp.com/blerp_products/Web/Favicons/mstile-310x310.png
+        url: https://blerp.com/dashboard
+        id: 4_1570_blerp
+      - title: triggerfyre
+        icon: >-
+          https://overlays.thefyrewire.com/widgets/triggerfyre/apple-touch-icon.png
+        url: https://overlays.thefyrewire.com/widgets/triggerfyre/
+        target: sametab
+        id: 5_1570_triggerfyre
+  - name: learning tools
+    icon: https://cdn-icons-png.flaticon.com/512/4185/4185714.png
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: udemy
+        description: courses for learning
+        icon: https://logos-world.net/wp-content/uploads/2021/11/Udemy-Logo.png
+        url: https://www.udemy.com/home/my-courses/lists/
+        target: newtab
+        id: 0_1441_udemy
+      - title: thinkcspy
+        description: think like a computer scientist
+        icon: >-
+          https://runestone.academy/ns/books/published/thinkcspy/_static/img/RAIcon.png
+        url: https://runestone.academy/ns/books/published/thinkcspy/index.html
+        target: sametab
+        tags:
+          - coding
+          - resource
+          - dsa
+          - computerscience
+          - cs
+          - compsci
+        id: 1_1441_thinkcspy
+      - title: algo repo
+        description: repo of algo things
+        url: https://github.com/tayllan/awesome-algorithms
+        target: sametab
+        id: 2_1441_algorepo
+      - title: interactive coding challenges
+        url: https://github.com/donnemartin/interactive-coding-challenges
+        target: sametab
+        id: 3_1441_interactivecodingchallenges
+      - title: learn dsa
+        url: http://www.allisons.org/ll/AlgDS/
+        target: sametab
+        tags:
+          - dsa
+          - ''
+        id: 4_1441_learndsa
+      - title: instructables
+        description: instructions on how to do so many things
+        url: https://www.instructables.com/feed/
+        target: sametab
+        tags:
+          - creative
+          - learning
+        id: 5_1441_instructables
+  - name: documentation
+    icon: https://cdn-icons-png.flaticon.com/512/4727/4727335.png
+    displayData:
+      sortBy: most-used
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: core api
+        description: core api documentation
+        icon: >-
+          https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwZBkiW0wh0EHB4Bp--N_WNKSec0hd1iJ_oov0-2MAQmqpJbPKB1jgNnuh7koLKAWtf9c&usqp=CAU
+        url: https://docs.coregames.com/api/
+        target: newtab
+        id: 0_1402_coreapi
+      - title: godot
+        description: godot docs
+        icon: >-
+          https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Godot_icon.svg/2048px-Godot_icon.svg.png
+        url: https://docs.godotengine.org/en/4.0/index.html
+        target: newtab
+        id: 1_1402_godot
+      - title: devdocs
+        description: documentation for most languages/frameworks/etc
+        icon: >-
+          https://cdn-1.webcatalog.io/catalog/devdocs/devdocs-icon-filled-256.webp?v=1675614067255
+        url: https://devdocs.io/
+        target: sametab
+        id: 2_1402_devdocs
+      - title: hackmd
+        description: place to share markdown
+        icon: https://i.imgur.com/ZmEEvep.png
+        url: https://hackmd.io/?nav=overview
+        target: sametab
+        id: 3_1402_hackmd
+      - title: simple icons
+        description: icons used for github shields
+        icon: https://simpleicons.org/icons/simpleicons.svg
+        url: https://simpleicons.org/
+        target: sametab
+        id: 4_1402_simpleicons
+      - title: zeal docsets
+        description: zeal user docsets
+        url: https://zealusercontributions.vercel.app/docsets
+        target: sametab
+        id: 5_1402_zealdocsets
+      - title: awesome repo
+        description: '|USEFUL| list of various things'
+        url: https://github.com/bayandin/awesome-awesomeness
+        target: sametab
+        tags:
+          - useful
+          - listlinks
+          - ''
+        id: 6_1402_awesomerepo
+  - name: gaming
+    icon: https://cdn-icons-png.flaticon.com/512/2780/2780137.png
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: steam
+        description: buy and play ze vidya gaymez
+        icon: >-
+          https://cdn.vox-cdn.com/thumbor/23lJVzRHJjubtmxrF_TFXN8Fb6Q=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/24347729/steam_stock_art.jpg
+        url: https://steamcommunity.com/id/djangothesolarboy/inventory/
+        target: sametab
+        id: 0_627_steam
+      - title: gamivo
+        description: buy gamez 4 cheap
+        icon: >-
+          https://pbs.twimg.com/profile_images/1478291849567784960/H9DmW0Zt_400x400.jpg
+        url: https://www.gamivo.com/
+        target: sametab
+        id: 1_627_gamivo
+      - title: itch.io
+        description: indie games & various game assets
+        icon: >-
+          https://static-00.iconduck.com/assets.00/itch-io-icon-512x512-wwio9bi8.png
+        url: https://itch.io/
+        target: sametab
+        id: 2_627_itchio
+      - title: gamejolt
+        description: indie game site
+        icon: >-
+          https://play-lh.googleusercontent.com/i0mVZnCIXrkka2iEPqfUxm7mmQZeN77uABX_oQ1bt7QZfYDiCKeS7Jk6_nsYoJkBbQ
+        url: https://gamejolt.com/
+        target: sametab
+        id: 3_627_gamejolt
+      - title: humblebundle
+        description: sometimes have gud deal
+        icon: >-
+          https://static-00.iconduck.com/assets.00/humble-bundle-icon-512x512-btdqmc48.png
+        url: https://www.humblebundle.com/?hmb_source=navbar
+        target: sametab
+        id: 4_627_humblebundle
+      - title: lutris
+        description: gaming on linux
+        icon: >-
+          https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Lutris_Game_Platform_%28Logo%29.svg/1200px-Lutris_Game_Platform_%28Logo%29.svg.png
+        url: https://lutris.net/
+        target: sametab
+        id: 5_627_lutris
+  - name: logging
+    icon: https://cdn-icons-png.flaticon.com/512/1465/1465600.png
+    displayData:
+      sortBy: most-used
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: serializd
+        description: record shows consumed
+        icon: >-
+          https://pbs.twimg.com/profile_images/1487528066905788420/snGjaJlS_400x400.jpg
+        url: https://www.serializd.com/
+        target: sametab
+        id: 0_743_serializd
+      - title: letterboxd
+        description: record movies i watch
+        icon: https://a.ltrbxd.com/logos/letterboxd-decal-dots-pos-rgb.svg
+        url: https://letterboxd.com/
+        target: sametab
+        id: 1_743_letterboxd
+      - title: backloggd
+        description: record games i consume
+        icon: >-
+          https://pbs.twimg.com/profile_images/1541908760607821824/3Am5dmsx_400x400.jpg
+        url: https://www.backloggd.com/u/morbidlyocheese/
+        target: sametab
+        id: 2_743_backloggd
+      - title: goodreads
+        description: record book consumed
+        icon: >-
+          https://cdn4.iconfinder.com/data/icons/miu-black-social-2/60/goodreads-512.png
+        url: https://www.goodreads.com/morbidlyocheese
+        target: sametab
+        id: 3_743_goodreads
+      - title: howlongtobeat
+        icon: >-
+          https://pbs.twimg.com/profile_images/433503450404368384/tdnd53zT_400x400.png
+        url: https://howlongtobeat.com/user/theZomking
+        target: sametab
+        id: 4_743_howlongtobeat
+      - title: simkl
+        description: ultra tracking | movies, tv, anime
+        icon: https://us.simkl.in/img_favicon/logo_square_s_540px.png
+        url: https://simkl.com/6006894/stats/
+        target: sametab
+        id: 5_743_simkl
+  - name: trackerz
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: jackett
+        icon: >-
+          https://user-images.githubusercontent.com/27040483/28728094-99f3e3f6-73c7-11e7-8f8d-28912dc6ac0d.png
+        url: http://192.168.1.177:9117/
+        target: sametab
+        statusCheck: true
+        id: 0_870_jackett
+      - title: ipt
+        description: torrentz
+        icon: https://www.synoboost.com/images/logoiptorrents.png
+        url: https://iptorrents.com/t
+        target: sametab
+        id: 1_870_ipt
+      - title: avistaz
+        description: asian torrentz
+        icon: https://invitez.net/uploads/posts/2019-10/1570289593_avist_logo.jpg
+        url: https://avistaz.to/
+        target: sametab
+        id: 2_870_avistaz
+    icon: >-
+      https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz4XLTwz1H3dEsoI9MeeMSc3MD2roarNK4EA&usqp=CAU
+  - name: clock
+    icon: fad fa-clock
+    widgets:
+      - type: clock
+        options:
+          timeZone: America/New_York
+        id: 0_524_clock
+  - name: coding
+    icon: https://www.svgrepo.com/show/110875/coding.svg
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 2
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: github
+        description: ze codez
+        icon: https://cdn-icons-png.flaticon.com/512/25/25231.png
+        url: https://github.com/morbidlyocheese
+        target: sametab
+        id: 0_628_github
+      - title: netlify
+        description: hosting
+        icon: >-
+          https://cdn.iconscout.com/icon/free/png-256/netlify-3629537-3032320.png
+        url: https://app.netlify.com/teams/warwickjunglex/overview
+        target: sametab
+        id: 1_628_netlify
+      - title: godaddy
+        description: domain acquiring
+        icon: >-
+          https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/GoDaddy_Logo_-_The_GO.svg/1200px-GoDaddy_Logo_-_The_GO.svg.png
+        url: >-
+          https://dashboard.godaddy.com/venture?ventureId=d43b9760-4757-4516-8753-47b802f6f647
+        target: sametab
+        id: 2_628_godaddy
+      - title: figma
+        description: wireframe suffz
+        icon: >-
+          https://cdn.sanity.io/images/599r6htc/localized/46a76c802176eb17b04e12108de7e7e0f3736dc6-1024x1024.png?w=670&h=670&q=75&fit=max&auto=format
+        url: https://www.figma.com/@morbidlyocheese
+        target: sametab
+        id: 3_628_figma
+      - title: themoviedb
+        description: themovie database
+        icon: >-
+          https://cdn.iconscout.com/icon/free/png-256/the-movie-database-3551074-2970659.png
+        url: https://www.themoviedb.org/u/mrrobutt
+        target: sametab
+        id: 4_628_themoviedb
+      - title: drawsql
+        description: create sql databases
+        icon: >-
+          https://pbs.twimg.com/profile_images/1016937460167684101/9wRBzBNZ_400x400.jpg
+        url: https://drawsql.app/diagrams
+        target: sametab
+        id: 5_628_drawsql
+      - title: dbdiagram
+        description: make wireframe databases
+        icon: >-
+          https://pbs.twimg.com/profile_images/1136901164039991297/-Vt-vAYQ_400x400.png
+        url: https://dbdiagram.io/d/641b8de9296d97641d8a0d68
+        target: sametab
+        id: 6_628_dbdiagram
+      - title: digitalocean
+        description: host sites
+        icon: >-
+          https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/DigitalOcean_icon.svg/2048px-DigitalOcean_icon.svg.png
+        url: https://cloud.digitalocean.com/account/profile?i=11feff
+        target: sametab
+        id: 7_628_digitalocean
+      - title: heroku
+        description: 'no hosting sites ]:'
+        icon: https://img.icons8.com/color/512/heroku.png
+        url: https://www.heroku.com/
+        target: sametab
+        id: 8_628_heroku
+      - title: stackoverflow
+        description: question the internet about code
+        icon: >-
+          https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Stack_Overflow_icon.svg/768px-Stack_Overflow_icon.svg.png
+        url: https://stackoverflow.com/
+        target: sametab
+        id: 9_628_stackoverflow
+      - title: render
+        description: host sitez on the interweb
+        icon: >-
+          https://dashboard.render.com/static/media/logo-redesign-02-word-dark.0811da26fe4b1f9a9b6c642d91bbcf73.svg
+        url: https://dashboard.render.com/
+        target: sametab
+        id: 10_628_render
+      - title: wakatime
+        description: keep track of project time spent
+        icon: https://avatars.githubusercontent.com/u/4814844?s=280&v=4
+        url: https://wakatime.com/dashboard
+        target: sametab
+        id: 11_628_wakatime
+      - title: codiga
+        description: code snippet manager profile
+        icon: https://avatars.githubusercontent.com/u/85802440?s=280&v=4
+        url: https://app.codiga.io/hub/user/morbidlyocheese/assistant
+        target: sametab
+        id: 12_628_codiga
+      - title: dev.to
+        description: coding blog posts
+        icon: https://friconix.com/jpg/fi-swluxx-dev-to.jpg
+        url: https://dev.to/morbidlyocheese
+        target: sametab
+        id: 13_628_devto
+      - title: forem
+        description: build communities
+        icon: >-
+          https://play-lh.googleusercontent.com/dPyTSoRysLKVT9AYYKux8MIoU-i4wT27Vgozy7d6oiJdaqvanXGBk3RCTuVaVE5jsB4=w240-h480-rw
+        url: https://account.forem.com/
+        target: sametab
+        id: 14_628_forem
+      - title: favicon generator
+        description: make favicons
+        url: https://favicon.io/favicon-converter/
+        target: sametab
+        id: 15_628_favicongenerator
+      - title: deta space
+        url: https://deta.space/discovery
+        target: sametab
+        id: 16_628_detaspace
+      - title: shields
+        description: shields for github repos
+        icon: https://simpleicons.org/icons/shieldsdotio.svg
+        url: https://shields.io/
+        target: sametab
+        id: 17_628_shields
+  - name: art
+    displayData:
+      sortBy: default
+      rows: 2
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: redbubble
+        description: sell artz
+        icon: https://img.icons8.com/dusk/512/redbubble.png
+        url: https://djangosolarboy.redbubble.com
+        target: sametab
+        id: 0_327_redbubble
+      - title: etsy
+        description: sell artz but mostly buy
+        icon: https://cdn-icons-png.flaticon.com/512/3670/3670121.png
+        url: >-
+          https://www.etsy.com/people/djangothesolarboy?ref=hdr_user_menu-profile
+        target: sametab
+        id: 1_327_etsy
+      - title: deviantart
+        description: prolly wont post my art here lol
+        icon: https://cdn-icons-png.flaticon.com/512/3669/3669921.png
+        url: https://www.deviantart.com/djangothesolarboi
+        target: sametab
+        id: 2_327_deviantart
+      - title: pinterest
+        description: inspiration
+        icon: https://cdn-icons-png.flaticon.com/512/145/145808.png
+        url: https://www.pinterest.com/djangothesolarboy/
+        target: sametab
+        id: 3_327_pinterest
+      - title: pixeljoint
+        description: share pixel art
+        icon: https://unita.co/wp-content/uploads/2022/02/pixel-joint-logo.png
+        url: https://pixeljoint.com/
+        target: sametab
+        id: 4_327_pixeljoint
+      - title: etherington tuts
+        description: super helpful art tutorials
+        icon: https://pbs.twimg.com/profile_images/1759638070/Picture_4_400x400.png
+        url: >-
+          https://theetheringtonbrothers.blogspot.com/p/every-how-to-think-when-you-draw.html
+        target: sametab
+        id: 5_327_etheringtontuts
+      - title: newgrounds
+        description: indie art & things
+        icon: https://www.newgrounds.com/downloads/designassets/assets/ng_logo.png
+        url: https://www.newgrounds.com/
+        target: sametab
+        id: 6_327_newgrounds
+      - title: cubebrush
+        description: brushes and other art things
+        url: https://cubebrush.co/settings/profile
+        target: sametab
+        id: 7_327_cubebrush
+      - title: adobe cloud
+        description: access adobe things
+        url: https://creativecloud.adobe.com/cc#
+        target: sametab
+        id: 8_327_adobecloud
+    icon: >-
+      https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Circle-icons-art.svg/1024px-Circle-icons-art.svg.png
+  - name: streaming
+    icon: https://cdn-icons-png.flaticon.com/512/4029/4029010.png
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: moo.bot
+        description: bot streaming tool
+        icon: https://moo.bot/favicon.ico
+        url: https://moo.bot/morbidlyocheese
+        target: sametab
+        id: 0_970_moobot
+      - title: ttv stream dashboard
+        description: manage twitch stream
+        icon: >-
+          https://play-lh.googleusercontent.com/mQefNb-b01xG8Z8UhzHrTS6PQO616jqgvcqed2P5QGAqQxUfWkQAG_Kc1wQF26fia1Ir
+        url: https://dashboard.twitch.tv/u/morbidlyocheese/stream-manager
+        target: sametab
+        id: 1_970_ttvstreamdashboard
+      - title: nightbot
+        url: https://nightbot.tv/dashboard
+        target: sametab
+        id: 2_970_nightbot
+  - name: useful | resources misc.
+    icon: https://cdn-icons-png.flaticon.com/512/962/962638.png
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: posterdb
+        description: poster database
+        icon: >-
+          https://styles.redditmedia.com/t5_zg7l3/styles/communityIcon_hez40g7m52261.png?width=256&s=3de5fc5b042666a636aa84a5f6d70b5674d3964c
+        url: https://theposterdb.com/
+        target: sametab
+        id: 0_2341_posterdb
+      - title: pixel art tutorials
+        description: tutorial catalogue page
+        icon: >-
+          https://t4.ftcdn.net/jpg/04/77/11/49/360_F_477114982_1vtj0bUL5ibDWHj4OEhUzxuO7MA7OxHf.webp
+        url: https://www.slynyrd.com/pixelblog-catalogue
+        target: sametab
+        id: 1_2341_pixelarttutorials
+      - title: emojipedia
+        description: various emojis
+        icon: https://upload.wikimedia.org/wikipedia/en/0/03/Emojipedia_logo.png
+        url: https://emojipedia.org/coffin/
+        target: sametab
+        id: 2_2341_emojipedia
+      - title: chiptone
+        description: make chiptune
+        icon: https://img.itch.zone/aW1nLzM3NzY1NDIucG5n/original/yFTn8t.png
+        url: https://sfbgames.itch.io/chiptone
+        target: sametab
+        id: 3_2341_chiptone
+      - title: regex
+        description: help understand regex
+        icon: >-
+          https://user-images.githubusercontent.com/5418178/175823761-ee7996b9-57be-4abf-be93-0ad25e7f37f0.png
+        url: https://regexr.com/
+        target: sametab
+        id: 4_2341_regex
+      - title: rubberduck
+        description: rubber duck it out
+        icon: https://cdn-icons-png.flaticon.com/512/4901/4901270.png
+        url: https://rubberduckdebugging.com/cyberduck/
+        target: sametab
+        id: 5_2341_rubberduck
+      - title: shell cmds
+        description: useful shell commands
+        icon: https://cdn-icons-png.flaticon.com/128/6702/6702936.png
+        url: >-
+          https://assets.aaonline.io/Module-Solo-Prep-Work/assets/shell-reference.pdf
+        target: sametab
+        id: 6_2341_shellcmds
+      - title: css-tricks
+        description: css-tricks guides
+        icon: >-
+          https://i0.wp.com/css-tricks.com/wp-content/uploads/2013/06/CSS-Tricks-star.png
+        url: https://css-tricks.com/guides/
+        target: sametab
+        id: 7_2341_csstricks
+      - title: unsplash
+        description: imgz
+        icon: >-
+          https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/unsplash-512.png
+        url: https://unsplash.com/
+        target: sametab
+        id: 8_2341_unsplash
+      - title: canva
+        description: graphic design tool
+        icon: >-
+          https://upload.wikimedia.org/wikipedia/commons/0/08/Canva_icon_2021.svg
+        url: https://www.canva.com/
+        target: sametab
+        id: 9_2341_canva
+      - title: DALL·E
+        description: ai images
+        icon: >-
+          https://images.sftcdn.net/images/t_app-icon-m/p/8b87c4ac-968b-4c2e-8542-70132c8fdb65/312528810/dall-e-DALL%C2%B7E-icn.png
+        url: https://labs.openai.com/
+        target: sametab
+        id: 10_2341_dalle
+      - title: chatgpt
+        description: 'chat with a computer O:'
+        icon: https://1000logos.net/wp-content/uploads/2023/02/ChatGPT-Logo.png
+        url: https://chat.openai.com/chat
+        target: sametab
+        id: 11_2341_chatgpt
+      - title: coolors
+        description: color palettes
+        icon: https://i.gyazo.com/f353c0a0975a2432adc5578672a48353.png
+        url: https://coolors.co/u/morbidlyocheese
+        target: sametab
+        id: 12_2341_coolors
+      - title: gravatar
+        description: avatars for websites
+        icon: >-
+          https://static-00.iconduck.com/assets.00/gravatar-icon-512x512-q59uuliu.png
+        url: https://en.gravatar.com/morbidlyocheese
+        target: sametab
+        id: 13_2341_gravatar
+      - title: falticon
+        description: icons
+        icon: >-
+          https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_e7b8a53bf9ee1f0023a60ce6644dd5f8/flaticon.jpg
+        url: https://www.flaticon.com/
+        target: sametab
+        id: 14_2341_falticon
+      - title: chatsonic
+        description: chatgpt alternative
+        icon: >-
+          https://play-lh.googleusercontent.com/LKvAD-WfEsFnjMaStqtYgGzv3FBw2Zgfd7ryreboJ7G7FWqsK-oxyMHWyrcmYizGWWs
+        url: >-
+          https://app.writesonic.com/template/08939e65-f3e9-43d4-a3f4-4203382449ff/chatsonic/7c529b47-b193-49a5-b764-49633a3acb0c
+        target: sametab
+        id: 15_2341_chatsonic
+      - title: simplified
+        description: dall-e alternative
+        icon: >-
+          https://www.saaskingdom.com/wp-content/uploads/2022/01/Simplified-logo.jpg
+        url: https://app.simplified.com/design
+        target: sametab
+        id: 16_2341_simplified
+      - title: dream.ai
+        description: dall-e alternative
+        icon: >-
+          https://global-uploads.webflow.com/61d7278cd8cf5c868e8e869d/61d765dede4c77e971dff43d_dream%20_~).png
+        url: https://dream.ai/create
+        target: sametab
+        id: 17_2341_dreamai
+      - title: moewalls
+        description: wallpapers
+        url: https://moewalls.com/
+        target: sametab
+        id: 18_2341_moewalls
+      - title: adobe color
+        description: adobe color wheel
+        url: https://color.adobe.com/create/color-wheel
+        target: sametab
+        id: 19_2341_adobecolor
+      - title: cody
+        description: chatgpt alt that you can feed a dataset
+        url: https://getcody.ai/directories
+        target: sametab
+        id: 20_2341_cody
+  - name: personal sites
+    icon: https://cdn-icons-png.flaticon.com/512/4117/4117111.png
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: morbidlyocheese
+        description: personal website
+        icon: https://i.gyazo.com/9b3f72705064249fd6586945870c0f28.gif
+        url: https://morbidlyocheese.com/
+        target: sametab
+        statusCheck: true
+        id: 0_1452_morbidlyocheese
+      - title: resume
+        description: itz me resume google doc
+        icon: https://damienjacobson.netlify.app/data/social/resume-icon.png
+        url: >-
+          https://docs.google.com/document/d/e/2PACX-1vS2yMVlCtPWw2CsNfkq1JchQ0_cMFK3_OC3NvbRwm3mMCsjLseSHNCpSyjhpI_QzHeYFlpY7HjFp9c3/pub
+        target: sametab
+        id: 1_1452_resume
+      - title: portfolio
+        description: portfolio website
+        icon: https://damienjacobson.netlify.app/data/social/resume-icon.png
+        url: https://damienjacobson.netlify.app/
+        target: sametab
+        statusCheck: true
+        id: 2_1452_portfolio
+      - title: horroreview
+        description: horror reviews
+        url: https://horroreview.netlify.app/
+        target: sametab
+        id: 3_1452_horroreview
+  - name: comics
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: awful hospital
+        icon: https://bogleech.com/awfulhospital/icon-computerchip.png
+        url: https://bogleech.com/awfulhospital/intro
+        target: modal
+        id: 0_638_awfulhospital
+      - title: atomic robo
+        description: atomic robo webcomic
+        icon: https://i.gyazo.com/57cdbbd6a685140e4e2e9db2e6802a2b.png
+        url: https://www.atomic-robo.com/atomicrobo/v1ch1-cover
+        target: modal
+        id: 1_638_atomicrobo
+      - title: 'Boozle '
+        description: boozle webcomic
+        icon: https://i.gyazo.com/5a4866b5e506421bfc74c35d60f278a1.png
+        url: http://boozle.sgoetter.com/comic/chapter-1-page-1/
+        target: modal
+        id: 2_638_boozle
+      - title: tapas
+        description: upload webcomix but mostly just read sometimes
+        icon: https://upload.wikimedia.org/wikipedia/commons/6/62/Tapas-logo.png
+        url: https://tapas.io/
+        target: sametab
+        id: 3_638_tapas
+      - title: webtoonz
+        description: upload webcomix but really just browse
+        icon: >-
+          https://w7.pngwing.com/pngs/293/26/png-transparent-line-webtoon-comics-manhwa-baltimore-comic-con-others-text-comic-book-logo-thumbnail.png
+        url: https://www.webtoons.com/en/#
+        target: sametab
+        id: 4_638_webtoonz
+      - title: digimon seekers
+        description: digimon visual novel online
+        url: https://digimon.net/digimonseekers/
+        target: sametab
+        id: 5_638_digimonseekers
+      - title: lackadaisy
+        description: furry cat webcomic
+        url: https://lackadaisy.com/comic.php?comicid=1
+        target: sametab
+        id: 6_638_lackadaisy
+  - name: shopping
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: amazon
+        description: do i need it? no but its really cool
+        icon: >-
+          https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Amazon_icon.svg/2048px-Amazon_icon.svg.png
+        url: https://www.amazon.com/
+        target: sametab
+        color: orange
+        id: 0_872_amazon
+  - name: tools
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: gyazo
+        description: screenshots
+        icon: https://i.gyazo.com/a8a60492aefa9fb2947acbfa794c75f0.png
+        url: https://gyazo.com/captures
+        target: sametab
+        id: 0_561_gyazo
+      - title: ezgif
+        icon: https://super-monitoring.com/blog/wp-content/uploads/2018/04/ezgif.png
+        url: https://ezgif.com/
+        target: sametab
+        id: 1_561_ezgif
+  - name: downloadz
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: transmission
+        icon: https://transmissionbt.com/assets/images/Transmission_icon.png
+        url: http://192.168.1.177:9091/
+        target: sametab
+        statusCheck: true
+        id: 0_978_transmission
+  - name: bookmarks
+    displayData:
+      sortBy: most-used
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: reddit post
+        description: post with various similar things to radarr, etc.
+        url: >-
+          https://www.reddit.com/r/radarr/comments/hbwnb2/a_list_of_all_companion_tools_and_software/
+        target: sametab
+        id: 0_969_redditpost
+  - name: love2d resources
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: lovejs
+        description: love2d to web
+        url: https://github.com/Davidobot/love.js
+        target: sametab
+        id: 0_1607_lovejs
+      - title: sheepolution
+        description: learn love2d with sheeps
+        url: https://sheepolution.com/learn/book/contents
+        target: sametab
+        id: 1_1607_sheepolution
+      - title: love2d tut repo
+        description: repo of love2d tutorials
+        url: https://github.com/love2d-community/awesome-love2d#tutorials
+        target: sametab
+        id: 2_1607_lovedtutrepo
+      - title: love2d library repo
+        description: repo of different love2d libraries
+        url: https://github.com/love2d-community/awesome-love2d
+        target: sametab
+        id: 3_1607_lovedlibraryrepo
+  - name: javascript things
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: awesome js repo
+        description: repo of different js libraries/frameworks
+        url: https://github.com/sorrycc/awesome-javascript
+        target: sametab
+        id: 0_1764_awesomejsrepo
+  - name: gamedev
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: awesome gamedev repo
+        description: repo of gamedev resources
+        url: https://github.com/ellisonleao/magictools
+        target: sametab
+        tags:
+          - gamedev
+        id: 0_729_awesomegamedevrepo
+  - name: web games
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: terminus
+        description: fun cli game
+        url: >-
+          https://web.mit.edu/mprat/Public/web/Terminus/Web/main.html?ref=blog.joberty.de
+        target: sametab
+        tags:
+          - game
+          - coding
+          - codinggame
+          - ''
+        color: '#20E253'
+        id: 0_875_terminus
+  - name: hollowmooncrafts
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: trello board
+        url: https://trello.com/b/w8n3CQPc/hollowmooncraftscom
+        target: sametab
+        id: 0_1745_trelloboard
+      - title: figma wireframe
+        url: >-
+          https://www.figma.com/file/ZA1jpkNqusPcGoNGKjnCmN/hollowmooncrafts?node-id=1-2&t=H3s6KyRWZF42spbG-0
+        target: sametab
+        id: 1_1745_figmawireframe
